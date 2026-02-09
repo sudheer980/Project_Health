@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>NG12 Cancer Risk Assessor</title>
+
+<link rel="stylesheet" href="/static/style.css" />
+
+</head>
+
+<body>
+
+<div class="floating-bg">
+  <div class="float-sphere sphere-1"></div>
+  <div class="float-sphere sphere-2"></div>
+  <div class="float-sphere sphere-3"></div>
+  <div class="float-sphere sphere-4"></div>
+</div>
+
+<div class="container">
+
+  <div class="header-3d">
+    <div class="rotating-cross"></div>
+    <h1>NG12 Cancer Risk Assessor</h1>
+  </div>
+
+  <p class="sub">
+    Assess individual patients OR ask NG12 guideline questions using Chat Mode.
+  </p>
+
+  <div class="card tab-switch">
+    <button id="tabAssess" class="active">Clinical Assessment</button>
+    <button id="tabChat">Chat Mode</button>
+  </div>
+
+  <div id="assessPanel">
+    <div class="card input-card">
+      <label>Patient ID</label>
+      <input id="patientId" placeholder="PT-101" />
+
+      <label>Top K</label>
+      <input id="topK" placeholder="5" />
+
+      <button id="runBtn" class="btn-primary">Assess</button>
+    </div>
+
+    <div id="result" class="card result-card hidden"></div>
+  </div>
+
+  <div id="chatPanel" class="hidden">
+    <div class="card input-card">
+
+      <label>Session ID</label>
+      <input id="sessionId" value="demo-session" />
+
+      <label>Ask NG12 Question</label>
+      <input id="chatMsg" />
+
+      <button id="sendChat" class="btn-primary">Send</button>
+
+    </div>
+
+    <div id="chatWindow" class="card chat-window"></div>
+  </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
