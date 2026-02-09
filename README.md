@@ -1,5 +1,4 @@
-# NG12 Cancer Risk Assessor (Part 1)
-
+# NG12 Cancer Risk Assessor 
 FastAPI service that:
 - Accepts a Patient ID
 - Uses tool calling to retrieve structured patient data (from `patients.json`)
@@ -16,3 +15,4 @@ Gemini 1.5 model IDs appear retired in Google’s lifecycle table, so the app us
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+
